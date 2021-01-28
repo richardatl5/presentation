@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <link rel="shortcut icon" href="#">
+    <meta charset="UTF-8">
+    <title>FIFA Map</title>
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+        <!-- Image and text -->
+        <nav class="navbar navbar-light bg-light">
+            <div class="container-fluid">
+             <a class="navbar-brand" href="/">
+             <img src="/static/images/logo.png" alt="" width="110" height="48" class="d-inline-block align-top">
+                
+             </a>
+            </div>
+         </nav>
+
+    <div class='dropdown'>
+      <div class='title pointerCursor'>Select an option <i class="fa fa-angle-right"></i></div>
+      
+      <div class='menu pointerCursor hide'>
+        <div class='option' id='option1'>Top 100 Players</div>
+        <div class='option' id='option2'>Top 1000 Players</div>
+        <div class='option' id='option3'>Top 10000 Players</div>
+        <div class='option' id='option4'>All Players</div>
+      </div>
+  
+    </div>
+  
+    <span id='result'>Your are looking at the Top 100 Players</span>
+
+
+
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css"
+    integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+    crossorigin=""/>
+
+    <!-- d3 JavaScript -->
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+    <!-- Our CSS -->
+    <link rel="stylesheet" type="text/css" href="../static/css/style2.css">
+
+  </head>
+  <body>
+
+    <!-- map div -->
+    <div id="map"></div>
+
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"
+    integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
+    crossorigin=""></script>
+    <!-- API key -->
+    <script type="text/javascript" src="../static/js/config.js"></script>
+      <!-- JS  -->
+    <script type="text/javascript" src="../static/js/logicF.js"></script>
+   
+  </body>
+</html>
